@@ -1,4 +1,4 @@
-var tabela = document.querySelector("table");
+var tabela = document.querySelector("tbody");
 
 tabela.addEventListener("dblclick",function(event){
     

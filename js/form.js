@@ -25,7 +25,7 @@ function obtemInfoDoForm(form) {
     multi2: form.multi2.value,
     cxa: form.cxa.value,
     qtd: form.qtd.value,
-    imc: calculaImc(
+    final: calcula(
       form.valorA.value.replace(",", "."),
       form.valorB.value.replace(",", "."),
       form.multi1.value.replace(",", "."),
@@ -48,7 +48,7 @@ function montaTr(produto) {
   produtoTr.appendChild(montaTd(produto.multi2, "multi2"));
   produtoTr.appendChild(montaTd(produto.cxa, "cxa"));
   produtoTr.appendChild(montaTd(produto.qtd, "qtd"));
-  produtoTr.appendChild(montaTd(produto.imc, "info-imc"));
+  produtoTr.appendChild(montaTd(produto.final, "final"));
   return produtoTr;
 }
 function montaTd(dado, classe) {
